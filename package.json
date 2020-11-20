@@ -1,0 +1,22 @@
+{
+  "name": "dansk-skole",
+  "version": "1.0.0",
+  "description": "Danish learning website",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass assets/scss/main.scss assets/css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipkomogorov/dansk-skole.git"
+  },
+  "author": "Filip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipkomogorov/dansk-skole/issues"
+  },
+  "homepage": "https://github.com/filipkomogorov/dansk-skole#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
