@@ -1,0 +1,39 @@
+.header{
+    height: 60px;
+    width: 114rem;
+    margin: 0 auto;
+    position: relative;
+    color: $color-white;;
+
+    .header__logo{
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+
+
+        a{
+            font-size: 3rem;
+            color: $color-white;;
+        }
+    }
+
+    .header__nav{
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 2%;
+        ul{
+
+            &>*:not(:first-child){
+                margin-left: 30px;
+            }
+            
+            li{
+                display: inline-block;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
