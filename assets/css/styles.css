@@ -26,10 +26,10 @@ body {
   margin: 100px 0 50px 0; }
   .header-primary h1 {
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 300; }
   .header-primary p {
-    font-size: 3rem; }
+    font-size: 2.8rem; }
 
 .header-secondary {
   text-align: center;
@@ -40,6 +40,31 @@ body {
 .card {
   background-color: #eee;
   color: #20211b; }
+
+.word-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 250px;
+  font-size: 3rem;
+  position: relative; }
+  .word-card .side {
+    background-color: #f0f2f2;
+    color: #20211b;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all .5s; }
+  .word-card--back {
+    transform: rotateY(-180deg); }
+  .word-card:hover .word-card--front {
+    transform: rotateY(180deg); }
+  .word-card:hover .word-card--back {
+    transform: rotateY(0deg); }
 
 .header {
   height: 60px;
@@ -119,3 +144,16 @@ main {
     main .section-cards__card--three {
       display: grid;
       align-content: center; }
+
+.section-words {
+  width: 100rem;
+  height: 100rem;
+  margin: 0 auto; }
+  .section-words__title {
+    width: 100%;
+    margin-bottom: 50px; }
+  .section-words__cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px; }
